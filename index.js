@@ -104,7 +104,7 @@ const result= await recentvisit.toArray()
 res.send(result)
 
 })
-//Team get api
+//Team gert api
 app.get("/team",async(req,res)=>{
 
     const team=teamMember.find({})
@@ -177,7 +177,7 @@ finally{
 run().catch(console.dir)
 
 app.get('/', (req, res) => {
-  res.send('Tourism Website')
+  res.send('Tourism Tourism  Website')
 })
 
 app.listen(port, () => {
