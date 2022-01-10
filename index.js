@@ -59,14 +59,16 @@ app.get("/service",async(req,res)=>{
 
 //This is get method for showing my orders
 app.get("/myorders",async(req,res)=>{
-
-let query={}
+console.log(req.query)
+const query={};
 const email=req.query.email;
 if(email){
+
     query={email:email}
 }
 
-const cursor=myOrdersColl.find(query)
+
+const cursor=myOrdersColl.find({})
 const myOrder=await cursor.toArray()
 res.send(myOrder)
 
