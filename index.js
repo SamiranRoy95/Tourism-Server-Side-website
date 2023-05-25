@@ -6,7 +6,7 @@ const app = express()//For calling Express server
 const port =  process.env.PORT||5000//For running on Browser
 require('dotenv').config()//For connectin dotenv
 
-app.use(cors())//for using Cors
+app.use(cors())
 app.use(express.json())//For gettting data in frondend sie
 
 //For connection database
@@ -183,4 +183,13 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log("This is servie",port)
 })
+
+
+
+
+
+
+
+
+
 
