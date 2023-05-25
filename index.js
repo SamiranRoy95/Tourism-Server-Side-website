@@ -174,10 +174,11 @@ finally{
 
 
 }
+
 run().catch(console.dir)
 
 app.get('/', (req, res) => {
-  res.send('Tourism Tourism  Website')
+  res.send('Tourism Tourism  Website with server')
 })
 
 app.listen(port, () => {
